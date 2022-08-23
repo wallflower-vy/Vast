@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Layout from "./Components/Layout";
+import ScreenOne from "./Components/BannerComponent";
+import ScreenTwo from "./Components/ScreenTwo";
+import ScreenThree from "./Components/ScreenThree";
 
 function App() {
+  const [screen, setScreen] = useState("screenOne");
+
+  const switchScreen = () => {
+    switch (screen) {
+      case "screenOne":
+        return <ScreenOne changeScreen={setScreen} />;
+        break;
+      case "screenTwo":
+        return <ScreenTwo changeScreen={setScreen} />;
+        break;
+        case "screenThree":
+        return <ScreenThree changeScreen={setScreen} />;
+        break;
+      default:
+        break;
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Layout>{switchScreen()}</Layout>
     </div>
   );
 }

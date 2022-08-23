@@ -1,0 +1,100 @@
+.banner-box{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    align-items:center;
+    justify-content: center;
+    /* position: absolute; */
+    width:100%;
+    /* top:50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%) */
+}
+
+.box{
+    opacity: 1;
+    padding: 1rem 0rem;
+    font-size:48px;
+    font-weight: 700;
+    line-height: 63.36px;
+    font-family: 'Outfit';
+    /* position: absolute; */
+}
+/* .b1{
+    animation: ani1 15s infinite;
+}
+.b2{
+    animation: ani2 15s infinite;
+}
+.b3{
+    animation: ani3 15s infinite;
+}
+.b4{
+    animation: ani4 15s infinite;
+}
+.b5{
+    animation: ani5 15s infinite;
+}
+
+@keyframes ani1 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani2 {
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani3 {
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+} */
+.text-box{
+    /* background-color: green; */
+    max-width:40%;
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 24px;
+    font-weight: 400;
+    font-family:'Outfit' ;
+    margin-top: 1rem;
+
+}
+.text-box-text{
+    color:#7B7B7B;
+    font-style: normal;
+    font-family: 'outfit';
+
+}
+
+.phone{
+   
+   
+}
+.phone2{
+    position: absolute;
+   
+}

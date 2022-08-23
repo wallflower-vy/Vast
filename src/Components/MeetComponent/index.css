@@ -1,0 +1,51 @@
+.meet-main-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    /* background-color: red; */
+    padding: 0rem 8rem;
+    /* height: 20rem; */
+}
+.meet-image-box{
+    /* background-color: orange; */
+    width:40%
+}
+.meet-left-box{
+    /* background-color: blue; */
+    
+    width:60%
+}
+.meet-left-box h1{
+    font-size: 48px;
+    font-family:'outfit';
+}
+.arrow-icon{
+    /* color:red; */
+    font-size: 5rem;
+}
+
+.button-box{
+    display: flex;
+    margin-top: 3rem;
+    justify-content:flex-end;
+    /* background-color: red; */
+    width:78%;
+
+}
+input{
+    display: block;
+    margin:2rem 0rem;
+    font-size: 24px;
+    width:70%;
+    padding:1rem 0rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    border-bottom:1px solid #fff;
+    
+}
+.phone3{
+    position: absolute;
+    left: 0;
+}
