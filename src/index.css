@@ -2,7 +2,11 @@ body{
   height:100vh;
   width: 100%;
   background-color: black;
+<<<<<<< HEAD
   overflow-y:hidden;
+=======
+  /* overflow: hidden; */
+>>>>>>> 4951f18b76986eea20fb9b99d4f379c8e7933979
   color:#fff;
   margin: 0;
   padding: 0;

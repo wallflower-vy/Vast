@@ -1,80 +1,97 @@
-.meet-main-box{
-    display: flex;
-   
-    margin-top: 8rem;
-   
-    padding: 0rem 8rem;
-   
-}
-.meet-image-box{
-    
-    width:40%
-}
-.meet-left-box{
-   
-    padding:0rem 1rem;
-    max-width:45%;
-}
-.meet-left-box h1{
-    font-size: 48px;
-    font-family:'Trap', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-.arrow-icon{
-    
-    font-size: 2.5rem;
-}
-.form-box{
-    
-    padding:0rem .2rem;
-}
-.button-box{
-    display: flex;
-    margin-top: 3rem;
-    justify-content:flex-end;
-    
-    width:100%;
+.meet-main-box {
+  display: flex;
 
+  margin-top: 8rem;
+
+  padding: 0rem 8rem;
+}
+.meet-image-box {
+  width: 40%;
+}
+.meet-left-box {
+  padding: 0rem 1rem;
+  max-width: 45%;
+}
+.meet-left-box h1 {
+  font-size: 48px;
+  font-family: "Trap", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.arrow-icon {
+  font-size: 2.5rem;
+}
+.form-box {
+  padding: 0rem 0.2rem;
+}
+.button-box {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+.phone3 {
+  position: absolute;
+  left: 0;
 }
 
-.input-field{
+.input-field {
+  display: block;
+  margin: 2rem 0rem;
+  font-size: 24px;
+  width: 95%;
+  font-weight: 400;
+  padding: 1rem 0.5rem;
+  font-family: "outfit", sans-serif;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  color: white;
+  z-index: 1;
+}
+.input-field:focus {
+  outline: none;
+}
+.input-field2 {
+  display: block;
+  margin: 2rem 0rem 7rem 0rem;
+  font-size: 24px;
+  width: 70%;
+  font-weight: 400;
+  padding: 1rem 0.5rem;
+  font-family: "outfit", sans-serif;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  color: white;
+  z-index: 1;
+}
+.input-field2:focus {
+  outline: none;
+}
+
+.phone3 {
+  position: absolute;
+  /* top:20; */
+  left: 0;
+}
+@media only screen and (max-width: 480px) {
+  .meet-main-box {
     display: block;
-    margin:2rem 0rem;
-    font-size: 24px;
-    width:95%;
-    font-weight: 400;
-    padding:1rem .5rem;
-    font-family: 'outfit', sans-serif;
-    border:none;
-    background: transparent;
-    border-bottom:1px solid #fff;
-    color:white;
-    z-index:1;
-}
-.input-field:focus{
-    outline: none;
-}
-.input-field2{
-    display: block;
-    margin:2rem 0rem 7rem 0rem;
-    font-size: 24px;
-    width:70%;
-    font-weight: 400;
-    padding:1rem .5rem;
-    font-family: 'outfit', sans-serif;
-    border:none;
-    background: transparent;
-    border-bottom:1px solid #fff;
-    color:white;
-    z-index:1;
-}
-.input-field2:focus{
-    outline: none;
-}
+    margin-top: 4rem;
+    padding: 0;
+  }
+  .phone3 {
+    display: none;
+  }
 
-.phone3{
-    position: absolute;
-    /* top:20; */
-    left: 0;
+  .meet-left-box {
+    width: 70vw;
+    padding: 0 1rem;
+  }
+  .meet-left-box h1 {
+    font-size: 40px;
+    width: 90vw;
+  }
 }

@@ -1,6 +1,4 @@
 import React from "react";
-
-
 import MeetComponent from "../MeetComponent";
 import ButtonComponent from "../ButtonComponent";
 
