@@ -1,10 +1,20 @@
-button{
-    background-color: #C8563C;
-    border-radius: 8px;
+button {
+  background-color: #c8563c;
+  border-radius: 8px;
+  width: 297px;
+  height: 60px;
+  border: none;
+  color: #fff;
+  cursor: pointer !important;
+}
+
+@media only screen and (max-width: 992px) {
+  button {
+    position: relative;
+    align-items: center;
+    left: 7vw;
+    bottom: 0;
     width: 297px;
-    height: 60px;
-    border: none;
-    color:#fff;
-    cursor: pointer !important;
-    
+    justify-content: center;
+  }
 }
