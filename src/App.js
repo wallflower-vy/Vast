@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 import Layout from "./Components/Layout";
-import ScreenOne from "./Components/BannerComponent";
+// import ScreenOne from "./Components/BannerComponent";
 import ScreenTwo from "./Components/ScreenTwo";
 import ScreenThree from "./Components/ScreenThree";
+import ScreenOne from "./Components/ScreenOne";
 
 function App() {
   const [screen, setScreen] = useState("screenOne");
@@ -11,7 +12,7 @@ function App() {
   const switchScreen = () => {
     switch (screen) {
       case "screenOne":
-        return <ScreenOne changeScreen={setScreen} />;
+        return <ScreenOne  changeScreen={setScreen} />;
         break;
       case "screenTwo":
         return <ScreenTwo changeScreen={setScreen} />;

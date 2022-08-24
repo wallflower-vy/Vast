@@ -2,7 +2,7 @@ import "./index.css";
 import React from "react";
 import ButtonComponent from "../ButtonComponent";
 import phone from "../../assets/Phone1.png";
-import phone2 from "../../assets/Phone2.png";
+// import phone2 from "../../assets/Phone2.png";
 
 const ScreenOne = ({ changeScreen }) => {
   const handlePageSwitch = () => {
