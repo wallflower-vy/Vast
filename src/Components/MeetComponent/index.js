@@ -1,9 +1,10 @@
 import React, { Children } from 'react';
 import './index.css';
 import phone3 from '../../assets/Phone3.png';
+
 import {BsArrowLeft} from 'react-icons/bs'
 import ButtonComponent from '../ButtonComponent';
-const MeetComponent = ({title,type,placeholder,children}) => {
+const MeetComponent = ({title,children}) => {
   return (
     <div className='meet-main-box'>
        <div className='meet-image-box'>
@@ -16,9 +17,7 @@ const MeetComponent = ({title,type,placeholder,children}) => {
             <div className='form-box'>
             {children}
             </div>
-            {/* <div className='button-box'>
-            <ButtonComponent text="Next" />
-            </div> */}
+           
             
         </div>
     </div>

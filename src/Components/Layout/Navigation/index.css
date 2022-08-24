@@ -1,14 +1,11 @@
 .navigation-bar{
-    /* background-color: blue; */
    align-items: center;
     display: flex;
     justify-content: row;
     justify-content: space-between;
     padding:3rem 8rem;
 }
-
 .icon-box{
-    /* background-color: red; */
     display: flex;
     flex-direction: row;
   
@@ -29,4 +26,25 @@
     
  
   
+}
+@media screen and (max-width:992px) {
+    .navigation-bar{
+        /* background-color: blue; */
+     
+        padding: 2rem .5rem;
+    }
+    
+   
+    .icons{
+       
+        margin: .3rem;
+        font-size: 1rem;
+        padding: .7rem;
+       
+       
+        
+        
+     
+      
+    }
 }

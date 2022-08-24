@@ -5,96 +5,89 @@
     margin-top: 8rem;
     align-items:center;
     justify-content: center;
-    /* position: absolute; */
     width:100%;
-    /* top:50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%) */
 }
-
 .box{
-    opacity: 1;
-    padding: 1rem 0rem;
-    font-size:48px;
-    font-weight: 700;
+        /* width:100%; */
+        text-align: center;
+        padding-bottom: 40px;
+}
+.box > span{
+    font-size: 48px;
+    font-family: 'Trap', sans-serif;
     line-height: 63.36px;
-    font-family: 'Outfit';
-    /* position: absolute; */
-}
-/* .b1{
-    animation: ani1 15s infinite;
-}
-.b2{
-    animation: ani2 15s infinite;
-}
-.b3{
-    animation: ani3 15s infinite;
-}
-.b4{
-    animation: ani4 15s infinite;
-}
-.b5{
-    animation: ani5 15s infinite;
+    font-weight: 700;
+    opacity: 0;
+    display: none;
+    height: 0;
 }
 
-@keyframes ani1 {
-    0%{
-        opacity: 0;
-    }
-    10%{
-        opacity: 1;
-    }
-    20%{
-        opacity: 0;
-    }
-}
 
-@keyframes ani2 {
-    20%{
-        opacity: 0;
-    }
-    30%{
-        opacity: 1;
-    }
-    40%{
-        opacity: 0;
-    }
-}
 
-@keyframes ani3 {
-    40%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    60%{
-        opacity: 0;
-    }
-} */
+.blurbg{
+border-bottom:10px solid red;
+border-image-slice: 30%;
+filter: blur(2px);
+z-index:-1;
+border-image-source:linear-gradient(90deg, #FEBE58 0%, #DE2BAE 100%);
+/* border-image: 
+    linear-gradient(
+      to bottom, 
+      red, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%; */
+/* border-image-source: linear-gradient(90deg, #FEBE58 0%, #DE2BAE 100%); */
+/* filter: blur(12px); */
+}
 .text-box{
-    /* background-color: green; */
-    max-width:40%;
+    max-width:40rem;
     text-align: center;
     padding: 0rem 1rem;
     font-size: 24px;
     font-weight: 400;
-    font-family:'Outfit' ;
-    margin-top: 1rem;
-
+    font-family:'Outfit', sans-serif ;
+   
 }
 .text-box-text{
     color:#7B7B7B;
     font-style: normal;
-    font-family: 'outfit';
+    font-family: 'outfit', sans-serif;
+    font-weight: 400;
 
 }
 
-.phone{
-   
-   
-}
 .phone2{
     position: absolute;
    
+}
+@media screen and (max-width:992px){
+    .banner-box{
+        /* background-color: red; */
+        margin-top: 2rem;
+       
+    }
+    .box{
+        opacity: 1;
+        padding: 1rem 0rem;
+        /* background-color: red; */
+        padding:1rem;
+        text-align: center;
+        width:50rem;
+        font-size:2rem;
+        font-weight: 700;
+        line-height:31.6px;
+      
+       
+    } 
+    .text-box{
+        max-width:25rem;
+        /* background-color: red; */
+        text-align: center;
+        padding: 0rem 1rem;
+        font-size:1rem;
+        font-weight: 400;
+        font-family:'Outfit' ;
+        margin-top: 1rem;
+    
+    }
 }

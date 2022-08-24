@@ -1,0 +1,34 @@
+.screenSeven-box{
+    /* background-color: red; */
+    display:flex;
+    margin-top: 8rem;
+    /* height:20rem; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.screenseven-headingbox{
+    /* background-color: blue; */
+   text-align: center;
+    max-width:45%;
+}
+.screenseven-headingbox h1{
+    font-size: 48px;
+    font-family: 'Trap', sans-serif;
+    line-height: 63.36px;
+    font-weight: 700;
+}
+.screenseven-textbox{
+    max-width:43rem;
+    /* background-color: blueviolet; */
+    margin-bottom: 1rem;
+    padding:0rem 4rem;
+    text-align: center;
+}
+.screenseven-textbox p{
+    font-size: 24px;
+    font-family: "outfit", sans-serif;
+    line-height: 31.68px;
+    color:#D4D4D4;
+    font-weight: 400;
+}

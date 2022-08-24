@@ -3,8 +3,9 @@ import "./App.css";
 import Layout from "./Components/Layout";
 // import ScreenOne from "./Components/BannerComponent";
 import ScreenTwo from "./Components/ScreenTwo";
-import ScreenThree from "./Components/ScreenThree";
 import ScreenOne from "./Components/ScreenOne";
+import ScreenSeven from "./Components/ScreenSeven";
+import ScreenSix from "./Components/ScreenSix";
 
 function App() {
   const [screen, setScreen] = useState("screenOne");
@@ -18,8 +19,17 @@ function App() {
         return <ScreenTwo changeScreen={setScreen} />;
         break;
         case "screenThree":
-        return <ScreenThree changeScreen={setScreen} />;
+        return <ScreenSix changeScreen={setScreen} />;
         break;
+        case "screenSeven":
+        return <ScreenSeven changeScreen={setScreen} />;
+        break;
+        // case "screenThree":
+        // return <ScreenThree changeScreen={setScreen} />;
+        // break;
+        // case "screenThree":
+        // return <ScreenThree changeScreen={setScreen} />;
+        // break;
       default:
         break;
     }

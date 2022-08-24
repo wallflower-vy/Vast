@@ -6,3 +6,13 @@
     height: 100vh;
     
 }
+@media screen and(max-width:992px) {
+    .background-box{
+        background-image: url(../../assets/Group\ 1000003672.png);
+        width:100%;
+        background-repeat:no-repeat;
+        background-size: contain;
+        height: 100vh;
+        
+    } 
+}

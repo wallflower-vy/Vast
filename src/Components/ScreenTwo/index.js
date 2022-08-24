@@ -20,10 +20,14 @@ const ScreenTwo = ({ changeScreen }) => {
                 <input type="email" placeholder= "Enter email address here" className="input-field" />
                 
              </form>
-        </MeetComponent>
+             
         <div className='button-box'>
+          
           <ButtonComponent text='Next' cb={handlePageSwitch} />
+         
         </div>
+        </MeetComponent>
+        
       
     </>
   );

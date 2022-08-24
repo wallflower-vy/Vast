@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/Trap-Black.otf';
+import './fonts/Trap-Bold.otf';
+import './fonts/Trap-ExtraBold.otf';
+import './fonts/Trap-Light.otf';
+import './fonts/Trap-Medium.otf';
+import './fonts/Trap-SemiBold.otf';
+ 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
