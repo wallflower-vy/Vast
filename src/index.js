@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+// import PullToRefresh from "react-js-pull-to-refresh";
 import reportWebVitals from './reportWebVitals';
 import './fonts/Trap-Black.otf';
 import './fonts/Trap-Bold.otf';

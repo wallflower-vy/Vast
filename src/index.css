@@ -1,16 +1,3 @@
-body {
-  height: 100vh;
-  background-image: url(./assets/Group\ 1000003672.png);
-  background-repeat:no-repeat;
-  /* background-size: cov/er; */
-  width: 100vw;
-  background-color: black;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
 @font-face {
   font-family: "Trap-Black";
   src: url("./fonts/Trap-Black.otf") format("otf");
@@ -35,9 +22,24 @@ body {
   font-family: "TrapSemiBold";
   src: url("./fonts/Trap-SemiBold.otf") format("otf");
 }
+body {
+  height: 100%;
+  background-image: url(./assets/Group\ 1000003672.png);
+  background-repeat: no-repeat;
+  font-family: "Trap-Medium", sans-serif;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
 @media screen and(max-width:575px) {
-  body{
+  body {
     background-size: contain;
     background-image: url(./assets/Group\ 1000003672.png);
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 }

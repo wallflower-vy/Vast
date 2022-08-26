@@ -19,7 +19,7 @@ const ScreenThree = ({ changeScreen }) => {
         <form className='form'>
           <label class='container'>
             Yes
-            <input type='radio' checked='' name='radio' />
+            <input type='radio'  name='radio' />
             <span class='checkmark'></span>
           </label>
           <br />
@@ -31,6 +31,7 @@ const ScreenThree = ({ changeScreen }) => {
             <ButtonComponent text='Next' cb={handlePageSwitch} />
           </div>
         </form>
+        
       </MeetComponent>
     </>
   );

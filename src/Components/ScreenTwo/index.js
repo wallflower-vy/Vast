@@ -25,14 +25,15 @@ const ScreenTwo = ({ changeScreen,handleSwitchBack }) => {
           <form>
                 <input type="text" placeholder="Enter First Name here" className="input-field" required />
                 <input type="email" placeholder= "Enter email address here" className="input-field" required/>
+                <div className='button-box'>
+          
+               <ButtonComponent text='Next' cb={handlePageSwitch} />
+         
+        </div>
                 
              </form>
              
-        <div className='button-box'>
-          
-          <ButtonComponent text='Next' cb={handlePageSwitch} />
-         
-        </div>
+        
        
         </MeetComponent>
         

@@ -5,12 +5,12 @@
   /* background-color: red; */
   padding-bottom: 4rem;
   height: fit-content;
-  margin-top: 4rem;
+  margin-top: 3rem;
 
   padding: 0rem 8rem;
 }
 .meet-image-box {
-  width: 40%;
+  width: 20%;
   margin: 1%;
   height:100%;
   /* background-color: green; */
@@ -18,7 +18,7 @@
 }
 .meet-left-box {
   padding: 0rem 1rem 3rem 1rem;
-  width: 70%;
+  width: 90%;
   /* background-color: blue; */
 }
 .meet-left-box h1 {
@@ -36,13 +36,14 @@
 .form-box {
   padding: 0rem 0.2rem 3rem 0.2rem;
   /* background-color: orange; */
+  /* width: 65%; */
   margin-top: 1rem;
 }
 .button-box {
   display: flex;
   margin-top: 6rem;
   justify-content: flex-end;
-  width: 90%;
+  /* width: 90%; */
   /* background-color: blue; */
 }
 .phone3 {
@@ -98,21 +99,21 @@
 @media only screen and (max-height: 680px){
   .meet-main-box {
     display: block;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 0;
     /* background-color: blue; */
   }
   .meet-left-box {
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     /* width: 100vw; */
     padding: 0rem;
    
   }
   .meet-left-box h1 {
-    font-size: 1.8rem !important;
+    font-size: 1.5rem !important;
     margin-top: 0rem !important;
-    line-height: 43px !important;
+    line-height: 40px !important;
     font-family: 'Trap', sans-serif;
     
     
@@ -133,7 +134,7 @@
   .meet-main-box {
     display: block;
     margin-top: 3rem;
-    padding: 0;
+    padding: 0rem 1rem;
     /* background-color: blue; */
   }
   .phone3 {
@@ -248,5 +249,32 @@
     width: 120%;
     /* background-color: blue; */
     margin-left: -20%;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .meet-left-box {
+    padding: 0rem 3rem 1rem;
+    width:60%;
+    /* background-color: pink; */
+    margin-left: 20%;
+  }
+  .input-field{
+    font-size: 1.2rem;
+    margin:2rem 0rem;
+    width: 80%;
+    border-radius: none;
+    font-family: 'outfit',sans-serif;
+  }
+  .button-box {
+    display: flex;
+    margin-top: 6rem;
+    
+    width: 90%;
+    /* background-color: red; */
+  }
+  .form-box{
+    /* background-color: green; */
+    width:90%;
   }
 }

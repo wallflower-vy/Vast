@@ -58,6 +58,7 @@ border-image-source:linear-gradient(90deg, #FEBE58 0%, #DE2BAE 100%);
     padding: 0rem 1rem;
     font-size: 24px;
     font-weight: 400;
+    /* font-family:"AvenirLTStd-Book" ; */
     font-family:'Outfit', sans-serif ;
    
 }
@@ -108,7 +109,7 @@ border-image-source:linear-gradient(90deg, #FEBE58 0%, #DE2BAE 100%);
     }
     .gif-one{
         position: absolute;
-        top:28rem;
+        top:25rem;
         left:-1rem;
         width:100%;
     }
@@ -119,6 +120,7 @@ border-image-source:linear-gradient(90deg, #FEBE58 0%, #DE2BAE 100%);
         font-size:1.6rem;
         font-weight: 700;
         line-height:31.6px;
+        background-color: blue;
       
        
     } 
@@ -128,13 +130,12 @@ border-image-source:linear-gradient(90deg, #FEBE58 0%, #DE2BAE 100%);
         text-align: center;
         padding:0rem 0.6rem;
         font-size:1rem;
-        
-        margin-top: 0rem;
+        margin-top: -2rem;
     
     }
     .text-box-text{
         color:#7B7B7B;
-        margin-top: 2rem;
+        margin-top: 1rem;
     
     }
 }
