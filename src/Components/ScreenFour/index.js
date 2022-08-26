@@ -2,6 +2,8 @@ import React from "react";
 import MeetComponent from "../MeetComponent";
 import ButtonComponent from "../ButtonComponent";
 import "../ScreenThree/index.css";
+import "./index.css"
+import IconComponent from "../IconComonent";
 
 const ScreenFour = ({ changeScreen }) => {
   const handlePageSwitch = () => {
@@ -9,7 +11,12 @@ const ScreenFour = ({ changeScreen }) => {
   };
   return (
     <>
-      <MeetComponent title="What has been your Major frustration with virtual Card Providers?">
+      <MeetComponent 
+      title="What has been your Major frustration with virtual Card Providers?"
+      icon={
+        <IconComponent changeScreen={changeScreen} backPage={"screenThree"} />
+      }
+      >
         <p className="para">(You can check multiple boxes)</p>
         <form className="form">
           <label class="container">
@@ -32,11 +39,12 @@ const ScreenFour = ({ changeScreen }) => {
             Other
             <span class="checkmark"></span>
           </label>
+          <div className="button-box screenfour-btn">
+        <ButtonComponent text="Next" className="" cb={handlePageSwitch} />
+      </div>
         </form>
       </MeetComponent>
-      <div className="button-box">
-        <ButtonComponent text="Next" cb={handlePageSwitch} />
-      </div>
+     
     </>
   );
 };

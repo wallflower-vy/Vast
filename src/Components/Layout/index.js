@@ -9,6 +9,7 @@ const Layout = ({children}) => {
     <div className='background-box'>
      <Navigation />
       {children}
+      
     </div>
   );
 };

@@ -1,21 +1,30 @@
 import React from "react";
 import MeetComponent from "../MeetComponent";
 import ButtonComponent from "../ButtonComponent";
+import IconComponent from "../IconComonent";
 
-const ScreenTwo = ({ changeScreen }) => {
+const ScreenTwo = ({ changeScreen,handleSwitchBack }) => {
   const handlePageSwitch = () => {
     changeScreen("screenThree");
   };
+  
+  
   return (
     <>
-      
+        {/* <div className="arrowicon-box">
+        <IconComponent /></div>  */}
         <MeetComponent
+        
           title='Can we meet you😊?'
+          icon={<IconComponent changeScreen={changeScreen} backPage={"screenOne"}/>
           
+            
+         }
+         
         >
           <form>
-                <input type="text" placeholder="Enter First Name here" className="input-field" />
-                <input type="email" placeholder= "Enter email address here" className="input-field" />
+                <input type="text" placeholder="Enter First Name here" className="input-field" required />
+                <input type="email" placeholder= "Enter email address here" className="input-field" required/>
                 
              </form>
              
@@ -24,6 +33,7 @@ const ScreenTwo = ({ changeScreen }) => {
           <ButtonComponent text='Next' cb={handlePageSwitch} />
          
         </div>
+       
         </MeetComponent>
         
       

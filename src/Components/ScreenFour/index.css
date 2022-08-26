@@ -1,0 +1,11 @@
+.screenfour-btn{
+    margin-top: 3rem;
+    justify-content: flex-end;
+}
+@media screen and(max-width:575px) {
+    .screenfour-btn{
+        margin-top: 2rem;
+        justify-content: flex-start;
+    }
+    
+}

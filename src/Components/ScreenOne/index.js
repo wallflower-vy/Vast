@@ -1,15 +1,17 @@
 import "./index.css";
 import React, { useEffect } from "react";
 import ButtonComponent from "../ButtonComponent";
+import gif1 from '../../assets/gif1.gif'
+import gif2 from '../../assets/gif2.gif'
 import phone from "../../assets/Phone1.png";
-import GifComponent from "../GifComponent";
+// import GifComponent from "../GifComponent";
 import { sliderAnimation } from "../../utils/animations";
 
 const ScreenOne = ({ changeScreen }) => {
   const handlePageSwitch = () => {
     changeScreen("screenTwo");
   };
-
+  
   useEffect(() => {
     sliderAnimation();
   }, []);
@@ -34,11 +36,14 @@ const ScreenOne = ({ changeScreen }) => {
         <p className='text-box-text'>Be a part of our building progress</p>
 
         <ButtonComponent cb={handlePageSwitch} text='Join WaitList' />
-      </div>
+        {/* <div className='gif-box'> */}
+        <img src ={gif1} alt="" className='gif-one'/>
+        <img src ={gif2}  className='gif-two'/>
 
-      <div className='image-box'>
-        {/* <GifComponent /> */}
+    {/* </div> */}
       </div>
+        
+     
       {/* <div >
    
     </div> */}

@@ -1,37 +1,43 @@
-body{
-  height:100vh;
-  width: 100%;
+body {
+  height: 100vh;
+  background-image: url(./assets/Group\ 1000003672.png);
+  background-repeat:no-repeat;
+  /* background-size: cov/er; */
+  width: 100vw;
   background-color: black;
-<<<<<<< HEAD
-  overflow-y:hidden;
-=======
-  /* overflow: hidden; */
->>>>>>> 4951f18b76986eea20fb9b99d4f379c8e7933979
-  color:#fff;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  color: #fff;
   margin: 0;
   padding: 0;
 }
 @font-face {
-  font-family: 'Trap-Black';
-  src: url('./fonts/Trap-Black.otf') format('otf');
+  font-family: "Trap-Black";
+  src: url("./fonts/Trap-Black.otf") format("otf");
 }
 @font-face {
-  font-family: 'Trap-Bold';
-  src: url('./fonts/Trap-Bold.otf') format('otf');
+  font-family: "Trap-Bold";
+  src: url("./fonts/Trap-Bold.otf") format("otf");
 }
 @font-face {
-  font-family: 'Trap-ExtraBold';
-  src: url('./fonts/Trap-ExtraBold.otf') format('otf');
+  font-family: "Trap-ExtraBold";
+  src: url("./fonts/Trap-ExtraBold.otf") format("otf");
 }
 @font-face {
-  font-family: 'Trap-Light';
-  src: url('./fonts/Trap-Light.otf') format('otf');
+  font-family: "Trap-Light";
+  src: url("./fonts/Trap-Light.otf") format("otf");
 }
 @font-face {
-  font-family: 'Trap-Medium';
-  src: url('./fonts/Trap-Medium.otf') format('otf');
+  font-family: "Trap-Medium";
+  src: url("./fonts/Trap-Medium.otf") format("otf");
 }
 @font-face {
-  font-family: 'TrapSemiBold';
-  src: url('./fonts/Trap-SemiBold.otf') format('otf');
+  font-family: "TrapSemiBold";
+  src: url("./fonts/Trap-SemiBold.otf") format("otf");
+}
+@media screen and(max-width:575px) {
+  body{
+    background-size: contain;
+    background-image: url(./assets/Group\ 1000003672.png);
+  }
 }

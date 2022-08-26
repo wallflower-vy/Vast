@@ -1,28 +1,64 @@
 .screenSeven-box{
     /* background-color: red; */
     display:flex;
-    margin-top: 8rem;
+    margin-top: 5rem;
     /* height:20rem; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+.button{
+    background-color: #C8563C;
+    border-radius: 8px;
+    font-family: 'Trap', sans-serif;
+    /* margin: auto; */
+    font-weight: 900;
+    align-items: center;
+    padding: 1.3rem 0rem;
+    width: 297px;
+    /* height: 60px; */
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color:#fff;
+    cursor: pointer !important;
+    font-size: 1.25rem;
+}
 .screenseven-headingbox{
     /* background-color: blue; */
    text-align: center;
-    max-width:45%;
+    width:50%;
 }
 .screenseven-headingbox h1{
-    font-size: 48px;
+    font-size: 3rem;
     font-family: 'Trap', sans-serif;
     line-height: 63.36px;
     font-weight: 700;
 }
+.new-box{
+    /* background-color: pink; */
+    width: 44%;
+    padding: 1rem rem;
+}
+.gif-three{
+    position: absolute;
+    top:18rem;
+    left:-5rem; 
+    width:50%;
+}
+.gif-four{
+    position: absolute;
+    top:18rem;
+    right:-5rem;
+    width:50%;
+}
 .screenseven-textbox{
-    max-width:43rem;
-    /* background-color: blueviolet; */
+    width:100%;
+    
     margin-bottom: 1rem;
-    padding:0rem 4rem;
+    display: flex;
+    justify-content: center;
+    padding:0rem ;
     text-align: center;
 }
 .screenseven-textbox p{
@@ -31,4 +67,86 @@
     line-height: 31.68px;
     color:#D4D4D4;
     font-weight: 400;
+}
+@media screen and (min-width:576px) and (max-width:992px){
+    .gif-three{
+        display: none;
+      }
+      .gif-four{
+          width: 100%;
+          top:38rem;
+          right:-4rem;
+  
+      }
+      .screenseven-headingbox{
+       
+        max-width:100%;
+    }
+    .new-box{
+      
+        width: 100%;
+        padding: .4rem .8rem;
+    }
+    .screenseven-textbox{
+        width:100%;
+        margin-bottom: 1rem;
+        /* background-color: blueviolet; */
+    
+       
+    }
+    .screenseven-headingbox h1{
+        font-size:2rem ;
+        line-height: 45px;
+        padding: 0rem 1rem;
+        /* background-color: red; */
+       
+    }
+}
+@media screen and (max-width:575px){
+    .screenseven-headingbox h1{
+        font-size:1.7rem ;
+        line-height: 31px;
+        font-weight: 900;
+        font-family: 'Trap', sans-serif;
+        /* background-color: red; */
+        padding: 0rem 1.3rem;
+       
+    }
+    .screenseven-headingbox{
+        
+        width:100%;
+    }
+    .screenseven-textbox{
+        width:100%;
+        margin-bottom: 1rem;
+       
+    
+       
+    }
+    .new-box{
+        width: 100%;
+        padding: .4rem .8rem ;
+    }
+    .screenseven-textbox p{
+        font-size: 1rem;
+        font-family: "outfit", sans-serif;
+        line-height: 21px;
+        font-weight: 400;
+    }
+    .gif-three{
+      display: none;
+    }
+    .gif-four{
+        width: 90%;
+        /* display:none; */
+        top:31.5rem;
+        right:0rem;
+
+    }
+    .screenSeven-box{
+        
+        margin-top: 3rem;
+        /* height:20rem; */
+        
+    }
 }
