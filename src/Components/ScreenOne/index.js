@@ -1,9 +1,9 @@
 import "./index.css";
 import React, { useEffect } from "react";
 import ButtonComponent from "../ButtonComponent";
-import gif1 from '../../assets/gif1.gif'
-import gif2 from '../../assets/gif2.gif'
-import phone from "../../assets/Phone1.png";
+import gif1 from "../../assets/gif1.gif";
+import gif2 from "../../assets/gif2.gif";
+// import phone from "../../assets/Phone1.png";
 // import GifComponent from "../GifComponent";
 import { sliderAnimation } from "../../utils/animations";
 
@@ -11,7 +11,7 @@ const ScreenOne = ({ changeScreen }) => {
   const handlePageSwitch = () => {
     changeScreen("screenTwo");
   };
-  
+
   useEffect(() => {
     sliderAnimation();
   }, []);
@@ -21,7 +21,7 @@ const ScreenOne = ({ changeScreen }) => {
         <div className='banner-heading-wrapper'>
           <div className='box b1'>
             <span className='s1'>
-              Create Virtual Cards <span className="blurbg">for free</span>
+              Create Virtual Cards <span className='blurbg'>for free</span>
             </span>
             <span className='s2'>No Monthly Charge</span>
             <span className='s3'>Friendly Exchange Rate</span>
@@ -35,15 +35,14 @@ const ScreenOne = ({ changeScreen }) => {
         </div>
         <p className='text-box-text'>Be a part of our building progress</p>
 
-        <ButtonComponent cb={handlePageSwitch} text='Join WaitList' />
+        <ButtonComponent onClick={handlePageSwitch} text='Join WaitList' />
         {/* <div className='gif-box'> */}
-        <img src ={gif1} alt="" className='gif-one'/>
-        <img src ={gif2}  className='gif-two'/>
+        <img src={gif1} alt='' className='gif-one' />
+        <img src={gif2} className='gif-two' />
 
-    {/* </div> */}
+        {/* </div> */}
       </div>
-        
-     
+
       {/* <div >
    
     </div> */}

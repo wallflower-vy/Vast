@@ -24,7 +24,7 @@ const ScreenFive = ({ changeScreen }) => {
         </form>
       </MeetComponent>
       <div className="button-box">
-        <ButtonComponent text="Next" cb={handlePageSwitch} />
+        <ButtonComponent text="Next" onClick={handlePageSwitch} />
       </div>
     </>
   );

@@ -21,17 +21,29 @@
     display: none;
     height: 0;
 }
+.gif-box{
+    background-color: red;
+    width:100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    /* margin-top:-20rem ; */
+    /* top:rem; */
+}
 .gif-one{
     position: absolute;
-    width:50%;
-    top:18rem;
-    left:-5rem; 
+    width:40%;
+    /* display: none; */
+    top:11rem;
+    left:0rem; 
 }
 .gif-two{
+    /* margin-top: -20rem; */
     position: absolute;
-    top:18rem;
-    right:-5rem;
-    width:50%;
+    top:11rem;
+    right:-2rem;
+    /* display: none; */
+    width:40%;
 }
 
 .blurbg{

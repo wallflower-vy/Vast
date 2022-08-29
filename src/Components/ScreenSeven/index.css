@@ -1,5 +1,5 @@
 .screenSeven-box{
-    /* background-color: red; */
+    background-color: blue;
     display:flex;
     margin-top: 5rem;
     /* height:20rem; */
@@ -42,15 +42,17 @@
 }
 .gif-three{
     position: absolute;
-    top:18rem;
-    left:-5rem; 
     width:50%;
+    /* display: none; */
+    top:-15rem;
+    left:-5rem;
 }
 .gif-four{
     position: absolute;
     top:18rem;
     right:-5rem;
     width:50%;
+    display: none;
 }
 .screenseven-textbox{
     width:100%;
@@ -138,7 +140,7 @@
     }
     .gif-four{
         width: 90%;
-        /* display:none; */
+        display:none;
         top:31.5rem;
         right:0rem;
 

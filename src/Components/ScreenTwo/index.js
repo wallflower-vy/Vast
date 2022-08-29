@@ -1,43 +1,74 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import MeetComponent from "../MeetComponent";
 import ButtonComponent from "../ButtonComponent";
 import IconComponent from "../IconComonent";
+import { FormContext } from "../../store";
 
-const ScreenTwo = ({ changeScreen,handleSwitchBack }) => {
-  const handlePageSwitch = () => {
+const ScreenTwo = ({ changeScreen, handleSwitchBack }) => {
+  const [form, setForm] = useState({
+    firstName: "",
+    email: "",
+  });
+
+  const state = useContext(FormContext);
+
+  const handlePageSwitch = (e) => {
+    e.preventDefault();
+    // console.log(form);
+    state.setName(form);
     changeScreen("screenThree");
   };
-  
-  
+  // const { form: formState, handleFormChange } = useContext(FormContext);
+
+  // const [disable, setDisable] = useState(true);
+
+  const handleFormChange = (event) => {
+    event.preventDefault();
+    const { name, value } = event.target;
+
+    const updatedForm = {
+      ...form,
+      [name]: value,
+    };
+
+    setForm(updatedForm);
+  };
+
   return (
     <>
-        {/* <div className="arrowicon-box">
-        <IconComponent /></div>  */}
-        <MeetComponent
-        
-          title='Can we meet you😊?'
-          icon={<IconComponent changeScreen={changeScreen} backPage={"screenOne"}/>
-          
-            
-         }
-         
-        >
-          <form>
-                <input type="text" placeholder="Enter First Name here" className="input-field" required />
-                <input type="email" placeholder= "Enter email address here" className="input-field" required/>
-                <div className='button-box'>
-          
-               <ButtonComponent text='Next' cb={handlePageSwitch} />
-         
+      <MeetComponent
+        title='Can we meet you😊?'
+        icon={
+          <IconComponent changeScreen={changeScreen} backPage={"screenOne"} />
+        }
+      >
+        <input
+          type='text'
+          placeholder='Enter First Name here'
+          classname='input-field'
+          required
+          name='firstName'
+          onChange={handleFormChange}
+        />
+
+        <input
+          name='email'
+          type='email'
+          placeholder='Enter email address here'
+          classname='input-field'
+          required
+          onChange={handleFormChange}
+        />
+
+        <div className='button-box'>
+          <ButtonComponent
+            onClick={handlePageSwitch}
+            // disabled={disable}
+            text='Next'
+            type='submit'
+          />
         </div>
-                
-             </form>
-             
-        
-       
-        </MeetComponent>
-        
-      
+      </MeetComponent>
     </>
   );
 };
