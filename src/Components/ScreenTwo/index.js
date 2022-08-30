@@ -29,12 +29,6 @@ const ScreenTwo = ({ changeScreen }) => {
     setForm(updatedForm);
   };
 
-  // useEffect(() => {
-  //   if (form.firstName && form.email) {
-  //     setDisable(false);
-  //   }
-  // }, [form]);
-
   return (
     <>
       <MeetComponent
@@ -43,7 +37,7 @@ const ScreenTwo = ({ changeScreen }) => {
           <IconComponent changeScreen={changeScreen} backPage={"screenOne"} />
         }
       >
-        <form>
+        <form onSubmit={handlePageSwitch}>
           <input
             type='text'
             value={form.firstName}
@@ -66,7 +60,7 @@ const ScreenTwo = ({ changeScreen }) => {
 
           <div className='button-box'>
             <ButtonComponent
-              onClick={handlePageSwitch}
+              // onClick={handlePageSwitch}
               disabled={!form.email && !form.firstName}
               text='Next'
               type='submit'

@@ -13,7 +13,7 @@ const MeetComponent = ({ title, icon, children }) => {
         <div className='title-box'>
           <h1>{title}</h1>
         </div>
-        <form className='form-box'>{children}</form>
+        <div className='form-box'>{children}</div>
       </div>
     </div>
   );

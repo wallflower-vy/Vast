@@ -66,16 +66,20 @@ const ScreenSix = ({ changeScreen }) => {
           <IconComponent changeScreen={changeScreen} backPage={"screenFour"} />
         }
       >
-        <input
-          type='text'
-          name='needs'
-          onChange={handleChange}
-          placeholder='Enter First Name here'
-          className='input-field'
-        />
-        <div className='radio-btn-box six-btn'>
-          <ButtonComponent text='Submit' onClick={handlePageSwitch} />
-        </div>
+        <form onSubmit={handlePageSwitch}>
+          {" "}
+          <input
+            type='text'
+            name='needs'
+            onChange={handleChange}
+            required
+            placeholder='Enter First Name here'
+            className='input-field'
+          />
+          <div className='radio-btn-box six-btn'>
+            <ButtonComponent text='Submit' />
+          </div>
+        </form>
       </MeetComponent>
     </>
   );
