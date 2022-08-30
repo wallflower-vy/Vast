@@ -5,8 +5,32 @@ const initialState = {
   email: "",
   needs: "",
   frustration: [],
-  used: null,
+  used: false,
+  checkBoxValues: [
+    {
+      isChecked: false,
+      value: "Exchange Rates",
+    },
+    {
+      isChecked: false,
+      value: "Transaction Limits",
+    },
+    {
+      isChecked: false,
+      value: "Long Onboarding Process",
+    },
+    {
+      name: "others",
+      value: "",
+    },
+  ],
 };
+
+// const checkList = [
+//   "Exchange Rates",
+//   "Transaction Limits",
+//   "Long Onboarding Process",
+// ];
 
 export const FormContext = createContext(initialState);
 

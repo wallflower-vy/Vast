@@ -7,6 +7,11 @@ import IconComponent from "../IconComonent";
 import { FormContext } from "../../store";
 
 const ScreenFour = ({ changeScreen }) => {
+  const state = useContext(FormContext);
+
+  const [showOthers, setShowOthers] = useState(false);
+  const [others, setOthers] = useState("");
+
   const [checked, setChecked] = useState([]);
   const handleCheck = (event) => {
     var updatedList = [...checked];
@@ -18,20 +23,14 @@ const ScreenFour = ({ changeScreen }) => {
     setChecked(updatedList);
   };
 
-  const state = useContext(FormContext);
-
-  const [showOthers, setShowOthers] = useState(false);
-
-  const [others, setOthers] = useState("");
-
   const handlePageSwitch = (e) => {
     e.preventDefault();
     if (showOthers && others.length) {
-      checkList.push(others);
+      checked.push(others);
+      // setOthers("");
+      setShowOthers(!others);
     }
-    setOthers("");
-    setShowOthers(!others);
-    state.setFrustration(checkList);
+    state.setFrustration(checked);
     changeScreen("screenSix");
   };
 
@@ -40,7 +39,11 @@ const ScreenFour = ({ changeScreen }) => {
     setOthers(e.target.value);
   };
 
-  const checkList = ["Apple", "Banana", "Tea", "Coffee"];
+  const checkList = [
+    "Exchange Rates",
+    "Transaction Limits",
+    "Long Onboarding Process",
+  ];
 
   return (
     <>
@@ -54,14 +57,23 @@ const ScreenFour = ({ changeScreen }) => {
 
         {checkList.map((item, index) => (
           <label key={item} className='container'>
-            <input value={item} type={"checkbox"} onChange={handleCheck} />
+            <input
+              className='input-tag'
+              value={item}
+              type={"checkbox"}
+              onChange={handleCheck}
+            />
             {item}
             <span class='checkmark'></span>
           </label>
         ))}
 
         <label className='container'>
-          <input onChange={() => setShowOthers(!showOthers)} type='checkbox' />
+          <input
+            className='input-tag'
+            onChange={() => setShowOthers(!showOthers)}
+            type='checkbox'
+          />
           Others
           <span className='checkmark'></span>
         </label>
@@ -71,14 +83,13 @@ const ScreenFour = ({ changeScreen }) => {
             name='others'
             type='text'
             placeholder='Others'
-            classname='input-field'
             required
             onChange={handleOthers}
-            className='input-field'
+            className='input-field others-box'
           />
         )}
 
-        <div className='button-box screenfour-btn'>
+        <div className=' screen-four-btn'>
           <ButtonComponent
             text='Next'
             className=''

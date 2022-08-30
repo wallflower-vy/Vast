@@ -24,6 +24,9 @@
   height:2.5rem;
   font-size: 1.2rem;
 }
+a{
+  color: black;
+}
 
 @media screen and (max-width: 992px) {
   .navigation-bar {

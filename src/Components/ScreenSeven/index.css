@@ -1,7 +1,7 @@
 .screenSeven-box{
-    background-color: blue;
+    /* background-color: blue; */
     display:flex;
-    margin-top: 5rem;
+    margin-top: 4rem;
     /* height:20rem; */
     justify-content: center;
     align-items: center;
@@ -37,22 +37,35 @@
 }
 .new-box{
     /* background-color: pink; */
+    font-size: .8rem;
     width: 44%;
     padding: 1rem rem;
 }
-.gif-three{
+.gif-three-box{
+    width:595px;
+    height:595px;
     position: absolute;
-    width:50%;
-    /* display: none; */
-    top:-15rem;
-    left:-5rem;
+    top:12rem;
+    /* right:0rem; */
+    /* background-color: aquamarine; */
+}
+.gif-three{
+    max-height: 100%;
+    max-width: 100%;
+   
+}
+.gif-four-box{
+    width:595px;
+    height:595px;
+    position: absolute;
+    top:12rem;
+    right:0rem;
+    /* background-color: aquamarine; */
 }
 .gif-four{
-    position: absolute;
-    top:18rem;
-    right:-5rem;
-    width:50%;
-    display: none;
+    max-height: 100%;
+    max-width: 100%;
+   
 }
 .screenseven-textbox{
     width:100%;
@@ -70,85 +83,93 @@
     color:#D4D4D4;
     font-weight: 400;
 }
-@media screen and (min-width:576px) and (max-width:992px){
-    .gif-three{
-        display: none;
-      }
-      .gif-four{
-          width: 100%;
-          top:38rem;
-          right:-4rem;
-  
-      }
-      .screenseven-headingbox{
-       
-        max-width:100%;
+
+@media screen  and (max-width:575px){
+    .screenSeven-box{
+        /* background-color: blue; */
+        display:flex;
+        margin-top: 4rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-    .new-box{
-      
-        width: 100%;
-        padding: .4rem .8rem;
-    }
-    .screenseven-textbox{
-        width:100%;
-        margin-bottom: 1rem;
-        /* background-color: blueviolet; */
-    
-       
-    }
-    .screenseven-headingbox h1{
-        font-size:2rem ;
-        line-height: 45px;
-        padding: 0rem 1rem;
-        /* background-color: red; */
-       
-    }
-}
-@media screen and (max-width:575px){
-    .screenseven-headingbox h1{
-        font-size:1.7rem ;
-        line-height: 31px;
-        font-weight: 900;
+    .button{
+        background-color: #C8563C;
+        border-radius: 8px;
         font-family: 'Trap', sans-serif;
-        /* background-color: red; */
-        padding: 0rem 1.3rem;
-       
+        /* margin: auto; */
+        font-weight: 900;
+        align-items: center;
+        padding: 1.3rem 0rem;
+        width: 297px;
+        /* height: 60px; */
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        color:#fff;
+        cursor: pointer !important;
+        font-size: 1.25rem;
     }
     .screenseven-headingbox{
-        
-        width:100%;
+        /* background-color: red; */
+        padding: 0rem 1rem;
+       text-align: center;
+        width:90%;
+    }
+    .screenseven-headingbox h1{
+        font-size: 1.5rem;
+        line-height: 31px;
+        font-weight: 700;
+    }
+    .new-box{
+        /* background-color: pink; */
+        width: 90%;
+        padding: 0rem 1rem;
+        font-size: .4rem !important;
+    }
+    .new-box{
+        font-size: .5rem !important;
+    }
+    .gif-three-box{
+        width:305px;
+        height:305px;
+        /* display: none; */
+        position: relative;
+        top:0rem;
+        /* right:0rem; */
+        /* background-color: aquamarine; */
+    }
+    .gif-three{
+        max-height: 100%;
+        max-width: 100%;
+       
+    }
+    .gif-four-box{
+        width:280px;
+        height:280px;
+        position: absolute;
+        /* display: none; */
+        top:30rem;
+        right:30rem;
+    }
+    .gif-four{
+        max-height: 100%;
+        max-width: 100%;
+       
     }
     .screenseven-textbox{
         width:100%;
         margin-bottom: 1rem;
-       
-    
-       
-    }
-    .new-box{
-        width: 100%;
-        padding: .4rem .8rem ;
+        display: flex;
+        justify-content: center;
+        padding:0rem ;
+        text-align: center;
     }
     .screenseven-textbox p{
         font-size: 1rem;
         font-family: "outfit", sans-serif;
-        line-height: 21px;
+        line-height: 31.68px;
+        color:#D4D4D4;
         font-weight: 400;
-    }
-    .gif-three{
-      display: none;
-    }
-    .gif-four{
-        width: 90%;
-        display:none;
-        top:31.5rem;
-        right:0rem;
-
-    }
-    .screenSeven-box{
-        
-        margin-top: 3rem;
-        /* height:20rem; */
-        
     }
 }

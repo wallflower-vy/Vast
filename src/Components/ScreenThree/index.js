@@ -3,10 +3,12 @@ import MeetComponent from "../MeetComponent";
 import ButtonComponent from "../ButtonComponent";
 import "./index.css";
 import { FormContext } from "../../store";
-const ScreenThree = ({ changeScreen }) => {
-  const [used, setUsed] = useState(false);
+import IconComponent from "../IconComonent";
 
+const ScreenThree = ({ changeScreen }) => {
   const state = useContext(FormContext);
+
+  const [used, setUsed] = useState(state.used);
 
   const handlePageSwitch = (e) => {
     e.preventDefault();
@@ -24,8 +26,13 @@ const ScreenThree = ({ changeScreen }) => {
 
   return (
     <>
-      <MeetComponent title='Have you ever made payment with a virtual card?'>
-        <form className='form'>
+      <MeetComponent
+        title='Have you ever made  payment with a virtual card?'
+        icon={
+          <IconComponent changeScreen={changeScreen} backPage={"screenTwo"} />
+        }
+      >
+        <form className='form-radio-box'>
           <label class='container'>
             Yes
             <input
@@ -33,6 +40,7 @@ const ScreenThree = ({ changeScreen }) => {
               value='yes'
               checked={used}
               onChange={handleChange}
+              className='input-tag'
             />
             <span class='checkmark'></span>
           </label>
@@ -44,14 +52,15 @@ const ScreenThree = ({ changeScreen }) => {
               value='no'
               checked={!used}
               onChange={handleChange}
+              className='input-tag'
             />{" "}
             <span class='checkmark'></span>
           </label>
         </form>
+        <div className=' three-btn'>
+          <ButtonComponent text='Next' cb={handlePageSwitch} />
+        </div>
       </MeetComponent>
-      <div className='button-box'>
-        <ButtonComponent text='Next' cb={handlePageSwitch} />
-      </div>
     </>
   );
 };

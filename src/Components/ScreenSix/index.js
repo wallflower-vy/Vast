@@ -6,6 +6,9 @@ import ButtonComponent from "../ButtonComponent";
 
 import IconComponent from "../IconComonent";
 import { FormContext } from "../../store";
+import axios from "axios";
+
+const API_BASE_URL = `https://vast-app.herokuapp.com/api`;
 
 const simpleText = () => (
   <>
@@ -20,7 +23,7 @@ const ScreenSix = ({ changeScreen }) => {
 
   const { firstName, email, frustration, used } = state;
 
-  const handlePageSwitch = (e) => {
+  const handlePageSwitch = async (e) => {
     e.preventDefault();
     const payload = {
       firstName,
@@ -29,13 +32,25 @@ const ScreenSix = ({ changeScreen }) => {
       used,
       needs,
     };
-    console.log(payload);
-    changeScreen("screenSeven");
+
+    try {
+      const res = await axios.post(
+        `${API_BASE_URL}/register/waitlist`,
+        payload
+      );
+      if (res.data) {
+        changeScreen("screenSeven");
+      }
+      console.log(res.data);
+    } catch (err) {
+      // Handle Error Here
+      console.error(err);
+    }
   };
 
   useEffect(() => {
     state.setNeed(needs);
-  }, [setNeeds]);
+  }, [state, needs]);
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -58,7 +73,7 @@ const ScreenSix = ({ changeScreen }) => {
           placeholder='Enter First Name here'
           className='input-field'
         />
-        <div className='button-box'>
+        <div className='radio-btn-box six-btn'>
           <ButtonComponent text='Submit' onClick={handlePageSwitch} />
         </div>
       </MeetComponent>

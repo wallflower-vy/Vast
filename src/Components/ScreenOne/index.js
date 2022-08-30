@@ -29,23 +29,25 @@ const ScreenOne = ({ changeScreen }) => {
         </div>
         <div className='text-box'>
           <p>
-            We are building a virtual credit card that will make all your online
-            card payments easier.{" "}
+          We are building Vast to take all of your online and international card transactions to an upgrade..{" "}
           </p>
         </div>
-        <p className='text-box-text'>Be a part of our building progress</p>
+        <p className='text-box-text'>You would love to be a part of that experience, right?</p>
 
         <ButtonComponent onClick={handlePageSwitch} text='Join WaitList' />
-        {/* <div className='gif-box'> */}
-        <img src={gif1} alt='' className='gif-one' />
-        <img src={gif2} className='gif-two' />
-
-        {/* </div> */}
+        
       </div>
+      {/* <div className='gif-box'> */}
+        <div className="gif-one-box">
+          <img src={gif1} alt='gif-one' className='gif-one' /> 
+        </div>
+        <div className="gif-two-box">
+          <img alt='gif-one' src={gif2} className='gif-two' />
+        </div>
+        
+        {/* </div> */}
 
-      {/* <div >
-   
-    </div> */}
+      
     </>
   );
 };

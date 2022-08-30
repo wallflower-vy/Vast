@@ -1,15 +1,33 @@
 .screenfour-btn {
   margin-top: 3rem;
+  display: flex;
   justify-content: flex-end;
   /* background-color: darkblue; */
 }
 
-@media screen and(max-width:575px) {
+.input-tag:checked + .checkmark {
+  background-color: #fff;
+}
+
+.others-box {
+  margin-top: -0.5rem !important;
+}
+/* .screen-four-btn{
+  margin-top: -1rem ;
+  min-width:800px;
+  background-color: green;
+ display: flex;
+ justify-content: flex-end;
+ 
+} */
+
+@media (max-width: 575px) {
   .screenfour-btn {
-    margin-top: 2rem;
+    margin-top: 4rem;
     justify-content: flex-start;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .screenfour-btn {
     margin-top: 3rem;

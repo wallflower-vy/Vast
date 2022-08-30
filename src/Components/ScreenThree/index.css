@@ -1,12 +1,17 @@
-/* .forms {
-  display: flex;
-  gap: 1rem;
-} */
+.form-radio-box {
+  /* background-color: pink; */
+  margin-top: 2rem;
+}
 
+.three-btn {
+  margin: 0rem;
+  min-width: 800px;
+  display: flex;
+  justify-content: flex-end;
+}
 .container {
-    display: block;
+  display: block;
   position: relative;
-  /* background-color: green; */
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
@@ -16,7 +21,6 @@
   -ms-user-select: none;
   user-select: none;
   padding-left: 3rem;
-
 }
 
 /* Hide the browser's default checkbox */
@@ -36,7 +40,11 @@
   height: 32px;
   width: 32px;
   border-radius: 5px;
-  background-color: #9C9C9C;
+  background-color: #9c9c9c;
+}
+
+.input-tag:checked + .checkmark {
+  background-color: #fff;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -49,7 +57,6 @@
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
-  
 }
 
 /* Style the checkmark/indicator */
@@ -58,18 +65,17 @@
   margin-top: 6px;
   width: 1rem;
   height: 1rem;
-  border: 1px solid #C8563C;
+  border: 1px solid #c8563c;
   border-radius: 50%;
-  background-color: #C8563C;
+  background-color: #c8563c;
 }
 label {
-  font-family: 'Trap';
+  font-family: "Trap";
   font-size: 1.3rem;
   font-weight: 700;
   line-height: 31px;
   letter-spacing: 0em;
   text-align: left;
-
 }
 
 .para {
@@ -82,3 +88,12 @@ label {
   color: rgba(150, 150, 150, 1);
 }
 
+@media screen and (max-width: 768px) {
+  .three-btn {
+    margin: 0rem;
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+  }
+}

@@ -27,22 +27,16 @@ function App() {
     switch (screen) {
       case "screenOne":
         return <ScreenOne changeScreen={setScreen} />;
-        break;
       case "screenTwo":
         return <ScreenTwo changeScreen={setScreen} />;
-        break;
       case "screenSeven":
         return <ScreenSeven changeScreen={setScreen} />;
-        break;
       case "screenThree":
         return <ScreenThree changeScreen={setScreen} />;
-        break;
       case "screenFour":
         return <ScreenFour changeScreen={setScreen} />;
-        break;
       case "screenSix":
         return <ScreenSix changeScreen={setScreen} />;
-        break;
       default:
         throw new Error("This screen doesnt exist");
     }

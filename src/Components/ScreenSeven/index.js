@@ -1,6 +1,5 @@
 import "./index.css";
 // import ButtonComponent from "../ButtonComponent";
-import phone from "../../assets/Phone1.png";
 import React, { useContext } from "react";
 import gif1 from "../../assets/gif1.gif";
 import gif2 from "../../assets/gif2.gif";
@@ -26,17 +25,19 @@ const ScreenSeven = () => {
           </div>
         </div>
         <a
-          href='https://71il7r7zt8x.typeform.com/to/iGzhO0k8 '
+          href='https://chat.whatsapp.com/BfaVhLXlZ39CfUKzGEaOHN'
           target='_blank'
           className='button'
+          rel='noreferrer'
         >
           Join Community
         </a>
-
-        <div className='gif-box'>
-          <img src={gif1} alt='' className='gif-three ' />
-          <img src={gif2} className='gif-four ' />
-        </div>
+      </div>
+      <div className='gif-three-box'>
+        <img src={gif1} alt='gif-three' className='gif-three' />
+      </div>
+      <div className='gif-four-box'>
+        <img alt='gif-four' src={gif2} className='gif-four' />
       </div>
     </>
   );

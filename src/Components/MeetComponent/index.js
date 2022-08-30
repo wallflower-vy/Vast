@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./index.css";
 import phone3 from "../../assets/gif1.gif";
 
@@ -6,12 +6,14 @@ const MeetComponent = ({ title, icon, children }) => {
   return (
     <div className='meet-main-box'>
       <div className='meet-image-box'>
-        {/* <img src={phone3} className='phone3 gif-one' alt='phone3' /> */}
+        <img src={phone3} className='phone3 ' alt='phone3' />
       </div>
       <div className='meet-left-box'>
         {icon}
-        <h1>{title}</h1>
-        <form>{children}</form>
+        <div className='title-box'>
+          <h1>{title}</h1>
+        </div>
+        <form className='form-box'>{children}</form>
       </div>
     </div>
   );
