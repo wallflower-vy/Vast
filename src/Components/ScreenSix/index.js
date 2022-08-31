@@ -20,39 +20,44 @@ const simpleText = () => (
 const ScreenSix = ({ changeScreen }) => {
   const [needs, setNeeds] = useState("");
   const state = useContext(FormContext);
+  const [loading, setLoading] = useState(false);
 
-  const { firstName, email, frustration, used } = state;
+  const { firstName, email, frustration, used, others } = state;
 
   const handlePageSwitch = async (e) => {
     e.preventDefault();
     const payload = {
       firstName,
       email,
-      frustration,
+      frustration: [...frustration, others && others].filter(Boolean),
       used,
       needs,
     };
-    changeScreen("screenSeven");
 
-    // try {
-    //   const res = await axios.post(
-    //     `${API_BASE_URL}/register/waitlist`,
-    //     payload,
-    //     {
-    //       withCredentials: true,
-    //     }
-    //   );
-    //   if (res.status === 200) {
-    //     changeScreen("screenSeven");
-    //   }
-    //   console.log(res.data);
-    // } catch (err) {
-    //   // Handle Error Here
-    //   console.error(err);
-    // }
+    // console.log(payload);
+    // changeScreen("screenSeven");
+
+    try {
+      setLoading(true);
+      const res = await axios.post(
+        `${API_BASE_URL}/register/waitlist`,
+        payload,
+        {
+          withCredentials: true,
+        }
+      );
+      if (res.status === 200) {
+        changeScreen("screenSeven");
+      }
+      console.log(res.data);
+    } catch (err) {
+      setLoading(true);
+      // Handle Error Here
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
-
-  
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -79,7 +84,7 @@ const ScreenSix = ({ changeScreen }) => {
             className='input-field'
           />
           <div className=' six-btn'>
-            <ButtonComponent text='Submit' />
+            <ButtonComponent loading={loading} text='Submit' />
           </div>
         </form>
       </MeetComponent>

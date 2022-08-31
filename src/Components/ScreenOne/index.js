@@ -21,33 +21,51 @@ const ScreenOne = ({ changeScreen }) => {
         <div className='banner-heading-wrapper'>
           <div className='box b1'>
             <span className='s1'>
-              Create Virtual Cards <span className='blurbg'>for free</span>
+              Create Virtual Cards{" "}
+              <span className='blur-container'>
+                <span>for free</span> <span className='blurbg'></span>{" "}
+              </span>
             </span>
-            <span className='s2'>No Monthly Charge</span>
-            <span className='s3'>Friendly Exchange Rate</span>
+            <span className='s2'>
+              Perform multiple{" "}
+              <span className='blur-container'>
+                <span> transactions at zero </span>{" "}
+                <span className='blurbg'></span>
+              </span>{" "}
+              monthly fees.
+            </span>
+
+            <span className='s3'>
+              Friendly{" "}
+              <span className='blur-container'>
+                <span> Exchange Rate</span> <span className='blurbg'></span>{" "}
+              </span>
+            </span>
           </div>
         </div>
         <div className='text-box'>
           <p>
-          We are building Vast to take all of your online and international card transactions to an upgrade..{" "}
+            We are building Vast to take all of your online and international
+            card transactions to an upgrade..{" "}
           </p>
         </div>
-        <p className='text-box-text'>You would love to be a part of that experience, right?</p>
+        <p className='text-box-text'>
+          You would love to be a part of that experience, right?
+        </p>
 
-        <ButtonComponent className="screen-one-btn" onClick={handlePageSwitch} text='Join WaitList' />
-        
+        <ButtonComponent
+          className='screen-one-btn'
+          onClick={handlePageSwitch}
+          text='Join WaitList'
+        />
       </div>
-      {/* <div className='gif-box'> */}
-        <div className="gif-one-box">
-          <img src={gif1} alt='gif-one' className='gif-one' /> 
-        </div>
-        <div className="gif-two-box">
-          <img alt='gif-one' src={gif2} className='gif-two' />
-        </div>
-        
-        {/* </div> */}
 
-      
+      <div className='gif-one-box'>
+        <img src={gif1} alt='gif-one' className='gif-one' />
+      </div>
+      <div className='gif-two-box'>
+        <img alt='gif-one' src={gif2} className='gif-two' />
+      </div>
     </>
   );
 };

@@ -1,9 +1,8 @@
 .screen-four-btn {
-  /* width:800px; */
-  /* background-color: green; */
+  
  display: flex;
  justify-content: flex-end ;
-  /* background-color: darkblue; */
+  
 }
 
 .input-tag:checked + .checkmark {
@@ -12,19 +11,21 @@
 
 .others-box {
   margin-top: -0.5rem !important;
+  margin-bottom: 0px;
 }
-/* .screen-four-btn{
-  margin-top: -1rem ;
-  min-width:800px;
-  background-color: green;
- display: flex;
- justify-content: flex-end;
- 
-} */
-
-@media (max-width: 768px) {
+@media screen and (max-width:400px) {
   .screen-four-btn{
-    /* width: 0px; */
+    /* background-color: aquamarine; */
+    position: relative;
+    top:0rem;
+    display: flex;
+    justify-content: center;
+   
+  }
+}
+@media (min-width: 414px) and (max-width:768px) {
+  .screen-four-btn{
+    
     position: relative;
     top:3rem;
     display: flex;
@@ -34,7 +35,7 @@
 }
 @media screen  and (max-height:640px){
   .screen-four-btn{
-    /* width: 0px; */
+   
     position: relative;
     top:-.5rem;
     display: flex;

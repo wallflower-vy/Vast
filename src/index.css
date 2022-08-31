@@ -44,7 +44,8 @@ body {
 @media screen and(max-width:575px) {
   body {
     background-size: contain;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x:hidden;
     /* height: -webkit-fill-available; */
 
     background-image: url(./assets/Group\ 1000003672.png);

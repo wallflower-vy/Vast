@@ -9,41 +9,37 @@ import { FormContext } from "../../store";
 const ScreenFour = ({ changeScreen }) => {
   const state = useContext(FormContext);
 
-  const [showOthers, setShowOthers] = useState(false);
-  const [others, setOthers] = useState("");
-
-  const [checked, setChecked] = useState([]);
-  const handleCheck = (event) => {
-    var updatedList = [...checked];
-    if (event.target.checked) {
-      updatedList = [...checked, event.target.value];
-    } else {
-      updatedList.splice(checked.indexOf(event.target.value), 1);
-    }
-    setChecked(updatedList);
-  };
-
-  const handlePageSwitch = (e) => {
-    e.preventDefault();
-    if (showOthers && others.length) {
-      checked.push(others);
-      // setOthers("");
-      setShowOthers(!others);
-    }
-    state.setFrustration(checked);
-    changeScreen("screenSix");
-  };
-
-  const handleOthers = (e) => {
-    e.preventDefault();
-    setOthers(e.target.value);
-  };
+  const [showOthers, setShowOthers] = useState(!!state.others);
 
   const checkList = [
     "Exchange Rates",
     "Transaction Limits",
     "Long Onboarding Process",
   ];
+
+  let sel = state.frustration;
+  function handleCheckboxChange(key) {
+    let find = sel.indexOf(key);
+    if (find > -1) {
+      sel.splice(find, 1);
+    } else {
+      sel.push(key);
+    }
+    state.setFrustration(sel);
+  }
+
+  const handlePageSwitch = (e) => {
+    e.preventDefault();
+    if (!showOthers && state.others.length) {
+      state.setOthers("");
+    }
+    changeScreen("screenSix");
+  };
+
+  const handleOthers = (e) => {
+    e.preventDefault();
+    state.setOthers(e.target.value);
+  };
 
   return (
     <>
@@ -61,7 +57,8 @@ const ScreenFour = ({ changeScreen }) => {
               className='input-tag'
               value={item}
               type={"checkbox"}
-              onChange={handleCheck}
+              checked={state.frustration.includes(item)}
+              onChange={() => handleCheckboxChange(item)}
             />
             {item}
             <span class='checkmark'></span>
@@ -73,6 +70,7 @@ const ScreenFour = ({ changeScreen }) => {
             className='input-tag'
             onChange={() => setShowOthers(!showOthers)}
             type='checkbox'
+            checked={showOthers}
           />
           Others
           <span className='checkmark'></span>
@@ -84,6 +82,7 @@ const ScreenFour = ({ changeScreen }) => {
             type='text'
             placeholder='Others'
             required
+            value={state.others}
             onChange={handleOthers}
             className='input-field others-box'
           />
@@ -96,7 +95,6 @@ const ScreenFour = ({ changeScreen }) => {
             onClick={handlePageSwitch}
           />
         </div>
-        {/* </form> */}
       </MeetComponent>
     </>
   );

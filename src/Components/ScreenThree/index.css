@@ -1,12 +1,11 @@
 .form-radio-box {
-  /* background-color: pink; */
+ 
   margin-top: 2rem;
 }
 
 .three-btn {
   margin: 0rem;
-  /* background-color: orchid; */
-  /* width: 800px; */
+  
   display: flex;
   justify-content: flex-end;
 }
@@ -92,11 +91,11 @@ label {
 @media screen and (max-width: 768px) {
   .three-btn {
     position: relative;
-    /* width: 100%; */
+   
     top: 5rem;
     display: flex;
     justify-content: center;
     margin-right: 2rem;
-    /* align-items: left; */
+  
   }
 }

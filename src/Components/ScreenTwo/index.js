@@ -59,8 +59,8 @@ const ScreenTwo = ({ changeScreen }) => {
           />
 
           <div className='button-box'>
-            <ButtonComponent
-              // onClick={handlePageSwitch}
+            <ButtonComponent 
+              
               disabled={!form.email && !form.firstName}
               text='Next'
               type='submit'

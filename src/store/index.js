@@ -5,32 +5,9 @@ const initialState = {
   email: "",
   needs: "",
   frustration: [],
-  used: false,
-  checkBoxValues: [
-    {
-      isChecked: false,
-      value: "Exchange Rates",
-    },
-    {
-      isChecked: false,
-      value: "Transaction Limits",
-    },
-    {
-      isChecked: false,
-      value: "Long Onboarding Process",
-    },
-    {
-      name: "others",
-      value: "",
-    },
-  ],
+  used: true,
+  others: "",
 };
-
-// const checkList = [
-//   "Exchange Rates",
-//   "Transaction Limits",
-//   "Long Onboarding Process",
-// ];
 
 export const FormContext = createContext(initialState);
 
@@ -65,12 +42,20 @@ const FormComponentProvider = ({ children }) => {
     });
   };
 
+  const setOthers = (data) => {
+    dispatch({
+      type: "DISPATCH_OTHERS",
+      payload: data,
+    });
+  };
+
   const contextValue = {
     ...state,
     setName,
     setNeed,
     setFrustration,
     setUsed,
+    setOthers,
   };
 
   return (
@@ -100,6 +85,11 @@ export const storeReducer = (state, action) => {
       return {
         ...state,
         needs: action.payload,
+      };
+    case "DISPATCH_OTHERS":
+      return {
+        ...state,
+        others: action.payload,
       };
     default:
       break;
