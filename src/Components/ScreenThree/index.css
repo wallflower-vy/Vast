@@ -5,7 +5,8 @@
 
 .three-btn {
   margin: 0rem;
-  min-width: 800px;
+  /* background-color: orchid; */
+  /* width: 800px; */
   display: flex;
   justify-content: flex-end;
 }
@@ -90,10 +91,12 @@ label {
 
 @media screen and (max-width: 768px) {
   .three-btn {
-    margin: 0rem;
-    width: 800px;
+    position: relative;
+    /* width: 100%; */
+    top: 5rem;
     display: flex;
-    justify-content: flex-start;
-    align-items: left;
+    justify-content: center;
+    margin-right: 2rem;
+    /* align-items: left; */
   }
 }

@@ -34,7 +34,7 @@ const ScreenOne = ({ changeScreen }) => {
         </div>
         <p className='text-box-text'>You would love to be a part of that experience, right?</p>
 
-        <ButtonComponent onClick={handlePageSwitch} text='Join WaitList' />
+        <ButtonComponent className="screen-one-btn" onClick={handlePageSwitch} text='Join WaitList' />
         
       </div>
       {/* <div className='gif-box'> */}

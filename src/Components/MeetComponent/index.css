@@ -3,9 +3,10 @@
   justify-content: space-between;
   /* background-color: red; */
   margin-top: 3rem;
+  /* padding: 0rem 10rem 0rem 0em; */
 }
 .meet-image-box {
-  width: 600px;
+  width: 40%;
   height:600px;
   /* background-color: green; */
 }
@@ -14,10 +15,10 @@
   max-width:100%
 }
 .meet-left-box {
-  width:900px;
+  width:50%;
   height:600px;
   /* background-color: blue; */
-  /* padding:; */
+  /* padding-right:5rem; */
 }
 .title-box{
   /* background-color: red; */
@@ -35,7 +36,8 @@
 }
 .form-box {
   /* background-color: orange; */
-  width:550px;
+  padding-right: 5rem;
+  /* width:550px; */
   height: 300px;
 }
 .button-box {
@@ -43,6 +45,7 @@
   margin-top: 6rem;
   justify-content: flex-end;
   /* background-color: aquamarine; */
+  width: 80%;
 }
 
 .input-field {
@@ -52,7 +55,7 @@
   width: 100%;
   margin: 2rem 0rem;
   font-size: 1.5rem;
-  width: 100%;
+  width: 80%;
   font-weight: 400;
   /* padding: .8rem 0.5rem; */
   font-family: "outfit", sans-serif;
@@ -138,9 +141,56 @@
     font-weight: 400;
   }
 }
+@media screen and (min-width:361px) and (max-width:400px){
+  .meet-main-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-top: 2rem;
+  }
+  .meet-image-box {
+    width: 600px;
+    height:600px;
+    /* background-color: green; */
+    display: none;
+  }
+  .meet-left-box {
+    width:100%;
+    height:500px;
+    /* background-color: blue; */
+    flex-direction:column;
+  }
+  .title-box{
+    width: 90%;
+    padding: 0rem 1rem;
+    /* background-color: aquamarine; */
+  }
+  .meet-left-box h1 {
+    font-size: 1.7rem;
+    line-height: 31px;
+   
+  }
+  .form-box {
+    /* background-color: orange; */
+    width:90%;
+    height: 550px !important;
+    padding: 0rem 1rem;
+  }
+  .button-box {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    width: 100%;
+  }
+  .input-field {
+    font-size: 1.2rem;
+    width: 90%;
+    font-weight: 400;
+  }
+}
 
-
-@media screen and (min-width:361px) and (max-width:575px) {
+@media screen and (min-width:401px) and (max-width:800px) {
   .meet-main-box {
     display: flex;
     width: 100%;
@@ -191,16 +241,4 @@
     font-weight: 400;
   }
 }
-@media screen and(max-height:640px){
-  .meet-left-box {
-    width:80% !important;
-  }
-  .button-box {
-    display: flex;
-    margin-top: 0rem;
-    justify-content: center;
-    width: 100%;
-    
-  }
-  
-}
+

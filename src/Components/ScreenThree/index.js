@@ -55,11 +55,12 @@ const ScreenThree = ({ changeScreen }) => {
               className='input-tag'
             />{" "}
             <span class='checkmark'></span>
-          </label>
-        </form>
-        <div className=' three-btn'>
+            <div className='three-btn'>
           <ButtonComponent text='Next' cb={handlePageSwitch} />
         </div>
+          </label>
+        </form>
+       
       </MeetComponent>
     </>
   );

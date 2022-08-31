@@ -89,7 +89,7 @@ const ScreenFour = ({ changeScreen }) => {
           />
         )}
 
-        <div className=' screen-four-btn'>
+        <div className='screen-four-btn'>
           <ButtonComponent
             text='Next'
             className=''

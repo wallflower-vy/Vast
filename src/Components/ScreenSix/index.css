@@ -2,23 +2,24 @@
     color:#C8563C;
 }
 .six-btn{
-    min-width:800px;
-    /* background-color: green; */
+   
    display: flex;
-   justify-content: flex-end !important;
-    /* margin: 10rem; */
-    /* min-width:200px;
-    top:25rem;
-    display: flex;
-    right: 0 ;
-    justify-content: flex-end !important; */
+   justify-content: flex-end ;
+   margin-top: 5rem
+   /* background-color: green; */
+   
+   ;
+   
 }
-@media screen and (max-width:575px) {
+@media screen and (max-width:768px) {
     .six-btn{
-        min-width:800px;
-        /* background-color: green; */
+        /* min-width:800px; */
+        position: relative;
+        top:8rem;
+        margin-top: 0rem;
+        /* margin-left: 1rem; */
        display: flex;
-       justify-content: flex-start !important;
+       justify-content: center;
        
     }
 }

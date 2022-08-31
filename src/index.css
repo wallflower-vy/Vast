@@ -31,6 +31,7 @@ body {
   font-family: "Trap-Medium", sans-serif;
   width: 100vw;
   background-color: black;
+  overflow: hidden;
   /* overflow-x: hidden; */
   /* overflow:hidden; */
   /* overscroll-behavior-y: contain; */
@@ -39,14 +40,11 @@ body {
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width:575px){
-  body{
-    overflow-x: hidden;
-  }
-}
+
 @media screen and(max-width:575px) {
   body {
     background-size: contain;
+    overflow: hidden;
     /* height: -webkit-fill-available; */
 
     background-image: url(./assets/Group\ 1000003672.png);

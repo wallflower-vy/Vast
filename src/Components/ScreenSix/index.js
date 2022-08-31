@@ -1,5 +1,5 @@
 import "./index.css";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 
 import MeetComponent from "../MeetComponent";
 import ButtonComponent from "../ButtonComponent";
@@ -32,25 +32,27 @@ const ScreenSix = ({ changeScreen }) => {
       used,
       needs,
     };
+    changeScreen("screenSeven");
 
-    try {
-      const res = await axios.post(
-        `${API_BASE_URL}/register/waitlist`,
-        payload
-      );
-      if (res.data) {
-        changeScreen("screenSeven");
-      }
-      console.log(res.data);
-    } catch (err) {
-      // Handle Error Here
-      console.error(err);
-    }
+    // try {
+    //   const res = await axios.post(
+    //     `${API_BASE_URL}/register/waitlist`,
+    //     payload,
+    //     {
+    //       withCredentials: true,
+    //     }
+    //   );
+    //   if (res.status === 200) {
+    //     changeScreen("screenSeven");
+    //   }
+    //   console.log(res.data);
+    // } catch (err) {
+    //   // Handle Error Here
+    //   console.error(err);
+    // }
   };
 
-  useEffect(() => {
-    state.setNeed(needs);
-  }, [state, needs]);
+  
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -73,10 +75,10 @@ const ScreenSix = ({ changeScreen }) => {
             name='needs'
             onChange={handleChange}
             required
-            placeholder='Enter First Name here'
+            placeholder='Share your thoughts here'
             className='input-field'
           />
-          <div className='radio-btn-box six-btn'>
+          <div className=' six-btn'>
             <ButtonComponent text='Submit' />
           </div>
         </form>
