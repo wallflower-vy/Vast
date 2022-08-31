@@ -86,6 +86,33 @@
   font-weight: 400;
 }
 @media screen and (max-width: 400px) {
+  .blurbg {
+    border-bottom: 5px solid red;
+    border-image-slice: 30%;
+    display: inline-block;
+    z-index: -1;
+    border-radius: 20px;
+    border-image-source: linear-gradient(90deg, #febe58 0%, #de2bae 100%);
+    filter: blur(3px);
+    display: block;
+    margin-top: 25px;
+  }
+  .box {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 31px;
+  }
+
+  .text-box {
+    margin-top: 1rem;
+    max-width: 40rem;
+    text-align: center;
+    padding: 0rem 1rem;
+    font-size: 24px;
+    font-weight: 400;
+    /* background-color: aqua; */
+    font-family: "Outfit", sans-serif;
+  }
 }
 @media screen and (max-width: 414px) {
   .screen-one-btn {
@@ -107,7 +134,18 @@
   .box {
     text-align: center;
 
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+  }
+  .blurbg {
+    border-bottom: 10px solid red;
+    border-image-slice: 30%;
+    display: inline-block;
+    z-index: -1;
+    border-radius: 20px;
+    border-image-source: linear-gradient(90deg, #febe58 0%, #de2bae 100%);
+    filter: blur(3px);
+    display: block;
+    margin-top: -10px;
   }
   .box > span {
     font-size: 1.3rem;
@@ -139,6 +177,17 @@
   }
   .screen-one-btn {
     margin-top: 0rem;
+  }
+  .blurbg {
+    border-bottom: 15px solid red;
+    border-image-slice: 30%;
+    display: inline-block;
+    z-index: -1;
+    border-radius: 20px;
+    border-image-source: linear-gradient(90deg, #febe58 0%, #de2bae 100%);
+    filter: blur(3px);
+    display: block;
+    margin-top:5px;
   }
   .box > span {
     font-size: 1.3rem;
