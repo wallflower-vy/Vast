@@ -1,45 +1,15 @@
 .meet-main-box {
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
-  margin-top: 3rem;
-  /* padding: 0rem 10rem 0rem 0em; */
 }
 .meet-image-box {
-  width: 40%;
-  height: 600px;
-  /* background-color: green; */
+  width: 50%;
+  flex: 1;
 }
 .phone3 {
-  max-width: 100%;
-  max-width: 100%;
+  height: 80%;
 }
-.meet-left-box {
-  width: 50%;
-  height: 600px;
-  /* background-color: blue; */
-  /* padding-right:5rem; */
-}
-.title-box {
-  /* background-color: red; */
-  width: 80%;
-}
-.meet-left-box h1 {
-  font-size: 3rem;
-  font-family: "Trap", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  margin-bottom: 0rem;
-  line-height: 63.3px;
-  padding: 0.5rem 0rem;
-  margin-top: 1rem;
-}
-.form-box {
-  /* background-color: orange; */
-  padding-right: 5rem;
-  /* width:550px; */
-  height: 300px;
-}
+
 .button-box {
   display: flex;
   margin-top: 6rem;
@@ -58,7 +28,7 @@
   width: 80%;
   font-weight: 400;
   /* padding: .8rem 0.5rem; */
-  font-family: "outfit", sans-serif;
+  font-family: 'outfit', sans-serif;
   border: none;
   background: transparent;
   border-bottom: 1px solid #fff;
@@ -77,7 +47,7 @@
   width: 70%;
   font-weight: 400;
   padding: 0.8rem 0.5rem;
-  font-family: "outfit", sans-serif;
+  font-family: 'outfit', sans-serif;
   border: none;
   background: transparent;
   border-bottom: 1px solid #fff;
@@ -87,95 +57,24 @@
   outline: none;
 }
 
-@media screen and (max-width: 360px) {
-  .meet-main-box {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    /* height: 100%; */
-    /* background-color: red; */
-
-    margin-top: 0rem;
-  }
-  .meet-image-box {
-    width: 600px;
-    height: 600px;
-    /* background-color: green; */
-    display: none;
-  }
-
-  .meet-left-box {
-    width: 100%;
-    /* height:500px; */
-    /* background-color: blue; */
-    flex-direction: column;
-  }
-  .title-box {
-    width: 90%;
-    padding: 0rem 1rem;
-  }
-  .meet-left-box h1 {
-    font-size: 1.5rem;
-    font-family: "Trap", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    margin-bottom: 0rem;
-    line-height: 31px;
-    margin-top: 1rem;
-  }
-  .form-box {
-    /* background-color: orange; */
-    /* width:90%; */
-    padding: 0rem 1rem;
-  }
-  .button-box {
-    display: flex;
-    margin-top: 7rem;
-    justify-content: center;
-    width: 100%;
-  }
-  .input-field {
-    font-size: 1.2rem;
-    width: 90%;
-    font-weight: 400;
-  }
+.meet-left-box {
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem;
 }
-@media screen and (min-width: 361px) and (max-width: 400px) {
-  .meet-main-box {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    /* background-color: red; */
-    margin-top: 1rem;
-  }
 
+
+
+@media screen and (max-width: 768px) {
   .meet-image-box {
-    width: 600px;
-    height: 600px;
-    /* background-color: green; */
     display: none;
   }
-  .meet-left-box {
-    width: 100%;
-    /* height:500px; */
-    /* background-color: blue; */
-    flex-direction: column;
-  }
-  .title-box {
-    width: 90%;
-    padding: 0rem 1rem;
-    /* background-color: aquamarine; */
-  }
+
   .meet-left-box h1 {
     font-size: 1.7rem;
     line-height: 31px;
   }
-  .form-box {
-    /* background-color: orange; */
-    width: 90%;
-    height: 550px !important;
-    padding: 0rem 1rem;
-  }
+
   .button-box {
     display: flex;
     margin-top: 10rem;
@@ -187,118 +86,26 @@
     width: 90%;
     font-weight: 400;
   }
+  
 }
 
-@media screen and (min-width: 401px) and (max-width: 600px) {
+@media screen and (min-width: 769px) {
   .meet-main-box {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    /* background-color: red; */
-
-    margin-top: 2.8rem;
-  }
-  .meet-image-box {
-    width: 600px;
-    height: 600px;
-    /* background-color: green; */
-    display: none;
-  }
-
-  .meet-left-box {
-    width: 100%;
-    height: 500px;
-    /* background-color: blue; */
-    flex-direction: column;
-  }
-  .title-box {
-    width: 90%;
-    padding: 0rem 1rem;
-    /* background-color: aquamarine; */
-  }
-  .meet-left-box h1 {
-    font-size: 1.7rem;
-    line-height: 31px;
-  }
-  .form-box {
-    /* background-color: orange; */
-    width: 90%;
-    height: 550px !important;
-    padding: 0rem 1rem;
-  }
-  .button-box {
-    display: flex;
-    margin-top: 10rem;
-    justify-content: center;
-    width: 100%;
-  }
-  .input-field {
-    font-size: 1.2rem;
-    width: 90%;
-    font-weight: 400;
-  }
-}
-@media screen and (min-width: 601px) and (max-width: 800px) {
-  .meet-main-box {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    /* background-color: red; */
-
-    margin-top: 2.8rem;
-  }
-  .meet-image-box {
-    width: 600px;
-    height: 600px;
-    /* background-color: green; */
-    display: none;
-  }
-
-  .meet-left-box {
-    width: 100%;
-    height: 500px;
-    /* background-color: blue; */
-    flex-direction: column;
-  }
-  .title-box {
-    width: 90%;
-    padding: 0rem 1rem;
-    /* background-color: aquamarine; */
-  }
-  .meet-left-box h1 {
-    font-size: 1.7rem;
-    line-height: 31px;
-  }
-  .form-box {
-    /* background-color: orange; */
-    width: 90%;
-    height: 550px !important;
-    padding: 0rem 1rem;
-  }
-  .button-box {
-    display: flex;
-    margin-top: 10rem;
-    justify-content: center;
-    width: 100%;
-  }
-  .input-field {
-    font-size: 1.2rem;
-    width: 90%;
-    font-weight: 400;
-  }
-}
-
-@media screen and (min-width: 801px) and (max-width: 1280px) {
-  .meet-main-box {
-    /* background-color: red; */
     margin-top: 2.5rem;
   }
 
-  .title-box {
-    /* background-color: red; */
-    width: 80%;
-  }
   .meet-left-box h1 {
     font-size: 2.5rem;
+  }
+
+  .meet-left-box h1 {
+    font-size: 3rem;
+    font-family: 'Trap', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 0rem;
+    line-height: 63.3px;
+    padding: 0.5rem 0rem;
+    margin-top: 1rem;
   }
 }

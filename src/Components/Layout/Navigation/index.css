@@ -1,43 +1,29 @@
 .navigation-bar {
-  align-items: center;
+  width: 100%;
   display: flex;
-  justify-content: row;
+  align-items: center;
   justify-content: space-between;
-  padding: 3rem 8rem;
-  /* background-color: red; */
+  padding: 1rem 2.5rem;
 }
 .icon-box {
   display: flex;
-  flex-direction: row; 
-  /* background-color: blue; */
 }
 .icons {
-  margin: 0rem 1rem;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  color: #000;
-  border-radius: 50%;
-  text-align: center;
-  align-items: center;
-  width:2.5rem;
-  height:2.5rem;
-  font-size: 1.2rem;
+  margin: 0 0.5rem;
 }
-a{
+a {
   color: black;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .navigation-bar {
-    /* background-color: blue; */
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
 
   .icons {
-    width:2rem;
-  height:2rem;
-  font-size: 1rem;
-    margin: 0rem .3rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin: 0rem 0.3rem;
   }
 }
