@@ -41,6 +41,7 @@ const ScreenSix = ({ changeScreen }) => {
       setLoading(true);
       const res = await axios.post(
         `${API_BASE_URL}/register/waitlist`,
+        // 'api/register/waitlist',
         payload,
         {
           withCredentials: true,

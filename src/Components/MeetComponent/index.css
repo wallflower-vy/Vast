@@ -70,12 +70,17 @@
   .meet-main-box {
     display: flex;
     justify-content: space-between;
+   
     padding: 0rem 0rem 0rem 0rem;
   }
   .meet-image-box {
     display: none;
   }
-
+  .meet-left-box {
+   margin-top: 2rem;
+   /* background-color: blue; */
+  }
+  
   .meet-left-box h1 {
     font-size: 1.7rem;
     line-height: 31px;

@@ -61,7 +61,7 @@ const ScreenTwo = ({ changeScreen }) => {
           <Jump>
           <div className='button-box'>
             <ButtonComponent 
-              
+             
               disabled={!form.email && !form.firstName}
               text='Next'
               type='submit'
