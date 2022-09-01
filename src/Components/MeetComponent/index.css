@@ -1,6 +1,7 @@
 .meet-main-box {
   display: flex;
   justify-content: space-between;
+  padding: 0rem 2.5rem 0rem 0rem;
 }
 .meet-image-box {
   width: 50%;
@@ -66,6 +67,11 @@
 
 
 @media screen and (max-width: 768px) {
+  .meet-main-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 0rem 0rem 0rem;
+  }
   .meet-image-box {
     display: none;
   }
@@ -88,8 +94,34 @@
   }
   
 }
+@media screen and (min-width: 769px) and (max-width:992px) {
+  .meet-main-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 0rem 0rem 0rem;
+  }
+  .meet-image-box {
+    display: none;
+  }
 
-@media screen and (min-width: 769px) {
+  .meet-left-box h1 {
+    font-size: 1.7rem;
+    line-height: 31px;
+  }
+
+  .button-box {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    width: 100%;
+  }
+  .input-field {
+    font-size: 1.2rem;
+    width: 90%;
+    font-weight: 400;
+  }
+}
+@media screen and (min-width: 993px) {
   .meet-main-box {
     margin-top: 2.5rem;
   }

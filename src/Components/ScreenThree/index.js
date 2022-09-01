@@ -4,6 +4,7 @@ import ButtonComponent from "../ButtonComponent";
 import "./index.css";
 import { FormContext } from "../../store";
 import IconComponent from "../IconComonent";
+import Bounce from 'react-reveal/Bounce';
 
 const ScreenThree = ({ changeScreen }) => {
   const state = useContext(FormContext);
@@ -55,9 +56,11 @@ const ScreenThree = ({ changeScreen }) => {
               className='input-tag'
             />{" "}
             <span class='checkmark'></span>
+            <Bounce bottom>
             <div className='three-btn'>
           <ButtonComponent text='Next' cb={handlePageSwitch} />
         </div>
+        </Bounce>
           </label>
         </form>
        

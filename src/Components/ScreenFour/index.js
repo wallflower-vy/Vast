@@ -5,6 +5,8 @@ import "../ScreenThree/index.css";
 import "./index.css";
 import IconComponent from "../IconComonent";
 import { FormContext } from "../../store";
+import Jump from 'react-reveal/Jump';
+
 
 const ScreenFour = ({ changeScreen }) => {
   const state = useContext(FormContext);
@@ -87,7 +89,7 @@ const ScreenFour = ({ changeScreen }) => {
             className='input-field others-box'
           />
         )}
-
+           <Jump>
         <div className='screen-four-btn'>
           <ButtonComponent
             text='Next'
@@ -95,6 +97,7 @@ const ScreenFour = ({ changeScreen }) => {
             onClick={handlePageSwitch}
           />
         </div>
+        </Jump>
       </MeetComponent>
     </>
   );

@@ -6,6 +6,9 @@ import gif2 from '../../assets/gif2.gif';
 // import phone from "../../assets/Phone1.png";
 // import GifComponent from "../GifComponent";
 import { sliderAnimation } from '../../utils/animations';
+import HeadShake from 'react-reveal/HeadShake';
+import Jump from 'react-reveal/Jump';
+
 
 const ScreenOne = ({ changeScreen }) => {
   const handlePageSwitch = () => {
@@ -54,20 +57,26 @@ const ScreenOne = ({ changeScreen }) => {
             You would love to be a part of that experience, right?
           </p>
         </div>
-
+        <HeadShake>
         <ButtonComponent
           className="screen-one-btn"
           onClick={handlePageSwitch}
           text="Join WaitList"
         />
+        </HeadShake>
       </div>
-
+      <Jump>
       <div className="gif-one-box">
         <img src={gif1} alt="gif-one" className="gif-one" />
       </div>
+      </Jump>
+      
+      <Jump>
       <div className="gif-two-box">
         <img alt="gif-one" src={gif2} className="gif-two" />
       </div>
+      </Jump>
+      
     </>
   );
 };

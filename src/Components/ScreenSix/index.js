@@ -3,7 +3,7 @@ import React, { useContext, useState } from "react";
 
 import MeetComponent from "../MeetComponent";
 import ButtonComponent from "../ButtonComponent";
-
+import Shake from 'react-reveal/Shake';
 import IconComponent from "../IconComonent";
 import { FormContext } from "../../store";
 import axios from "axios";
@@ -83,9 +83,11 @@ const ScreenSix = ({ changeScreen }) => {
             placeholder='Share your thoughts here'
             className='input-field'
           />
+           <Shake>
           <div className=' six-btn'>
             <ButtonComponent loading={loading} text='Submit' />
           </div>
+          </Shake>
         </form>
       </MeetComponent>
     </>

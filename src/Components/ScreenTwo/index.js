@@ -3,6 +3,7 @@ import MeetComponent from "../MeetComponent";
 import ButtonComponent from "../ButtonComponent";
 import IconComponent from "../IconComonent";
 import { FormContext } from "../../store";
+import Jump from 'react-reveal/Jump';
 
 const ScreenTwo = ({ changeScreen }) => {
   const state = useContext(FormContext);
@@ -57,7 +58,7 @@ const ScreenTwo = ({ changeScreen }) => {
             required
             onChange={handleFormChange}
           />
-
+          <Jump>
           <div className='button-box'>
             <ButtonComponent 
               
@@ -66,6 +67,7 @@ const ScreenTwo = ({ changeScreen }) => {
               type='submit'
             />
           </div>
+          </Jump>
         </form>
       </MeetComponent>
     </>
