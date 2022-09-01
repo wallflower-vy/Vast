@@ -22,23 +22,26 @@
   font-family: "TrapSemiBold";
   src: url("./fonts/Trap-SemiBold.otf") format("otf");
 }
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   /* height: 900px; */
-  max-height: 100vh;
+  min-height: 100vh;
 
   background-image: url(./assets/Group\ 1000003672.png);
   background-repeat: no-repeat;
   font-family: "Trap-Medium", sans-serif;
-  width: 100vw;
+  max-width: 100vw;
   background-color: black;
-  overflow: hidden;
-  /* overflow-x: hidden; */
-  /* overflow:hidden; */
-  /* overscroll-behavior-y: contain; */
-
+  overflow-y: hidden;
   color: #fff;
-  margin: 0;
-  padding: 0;
 }
 
 @media screen and(max-width:575px) {
@@ -61,3 +64,5 @@ input[type="checkbox"] {
   height: 0;
   width: 0;
 }
+
+

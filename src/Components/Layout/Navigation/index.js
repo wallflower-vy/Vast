@@ -2,11 +2,10 @@ import React from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/vast.png";
-import { FaFacebookF } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
-import { FaLinkedinIn } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-
+import {ReactComponent as Instagram} from '../../../assets/instagram.svg'
+import {ReactComponent as Twitter} from '../../../assets/twitter.svg'
+import {ReactComponent as LinkedIn} from '../../../assets/linkedin.svg'
+import {ReactComponent as Facebook} from '../../../assets/facebook.svg'
 const Navigation = () => {
   return (
     <div className='navigation-bar'>
@@ -22,7 +21,7 @@ const Navigation = () => {
             href='https://www.facebook.com/usevastsapp'
             target='_blank'
           >
-            <FaFacebookF />
+            <Facebook />
           </a>
         </div>
         <div className='icons'>
@@ -31,7 +30,7 @@ const Navigation = () => {
             href='https://twitter.com/usevastapp?s=21&t=PMg2OfFx3RXIGIxyuOecVQ'
             target='_blank'
           >
-            <BsTwitter />
+            <Twitter />
           </a>
         </div>
         <div className='icons'>
@@ -40,7 +39,7 @@ const Navigation = () => {
             href='https://www.instagram.com/usevastapp/'
             target='_blank'
           >
-            <AiFillInstagram />
+            <Instagram />
           </a>
         </div>
         <div className='icons'>
@@ -49,7 +48,7 @@ const Navigation = () => {
             href='https://www.linkedin.com/company/usevastapp/'
             target='_blank'
           >
-            <FaLinkedinIn />
+            <LinkedIn/>
           </a>
         </div>
       </div>

@@ -32,7 +32,7 @@ const ScreenThree = ({ changeScreen }) => {
           <IconComponent changeScreen={changeScreen} backPage={"screenTwo"} />
         }
       >
-        <form className='form-radio-box'>
+        <form className='general-form form-radio-box'>
           <label class='container'>
             Yes
             <input
