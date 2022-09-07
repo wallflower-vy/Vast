@@ -19,7 +19,7 @@ const ScreenSeven = () => {
           <div class='new-box'>
             <p>
               We will continue to build based on your recommendations. Kindly
-              join our Telegram Community to be up-to-date on our product
+              join our WhatsApp Community to be up-to-date on our product
               offerings cheers!🥂
             </p>
           </div>

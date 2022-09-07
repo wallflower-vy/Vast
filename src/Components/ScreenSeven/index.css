@@ -246,7 +246,7 @@
 }
 @media screen  and (min-width:801px) and (max-width:1280px){
     .screenSeven-box{
-        background-color: blue;
+        /* background-color: blue; */
         display:flex;
         margin-top: 3rem;
         /* height:20rem; */
